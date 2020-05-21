@@ -1,3 +1,16 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 .App {
   min-height: 100vh;
   background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
