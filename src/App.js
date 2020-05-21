@@ -39,6 +39,7 @@ const App = () => {
         <input
           className="search-bar"
           type="text"
+          placeholder="Search top recipe and more"
           value={search}
           onChange={updateSearch}
         />
@@ -46,6 +47,7 @@ const App = () => {
           Search
         </button>
       </form>
+
       <div className="recipes">
         {recipes.map((recipe) => (
           <Recipe

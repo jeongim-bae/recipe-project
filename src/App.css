@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: 10px;
+  font-size: 14px;
   height: 100%;
   width: 100%;
 }
@@ -9,15 +9,17 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #5c5b5b;
+  line-height: 1.5rem;
 }
 
 .App {
   min-height: 100vh;
-  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+  background-image: linear-gradient(to top, #d299c2 0%, #cbd1b7 100%);
 }
 
 .search-form {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,14 +32,50 @@ html {
 }
 
 .search-button {
-  background: lightcoral;
-  border: none;
-  padding: 10px 20px;
-  color: white;
+  width: 100px;
+  height: 35px;
+  border: 1px solid rgb(100, 100, 100);
+  background: rgb(100, 100, 100);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
 .recipes {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: 0 100px;
+}
+
+ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+ul li::before {
+  content: " ▪ ";
+  color: rgb(173, 92, 92);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+input {
+  border: 1px;
+  height: 35px;
+  padding: 8px 18px;
+  margin: 2rem 0;
+  color: rgb(200, 200, 200);
+  border-radius: 5px 0 0 5px;
+}
+
+input:focus {
+  color: #5c5b5b;
+}
+
+h3 {
+  font-size: 20px;
 }
